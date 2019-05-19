@@ -1,0 +1,221 @@
+body{
+	margin: 0;
+	background-image: url("png/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 100px;
+	background-repeat: repeat-y;
+
+}
+
+.li_entete{
+	list-style-type: none;
+	font-size: 20px;
+	border-radius: 20px;
+	background-color: orange;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 150px;
+	text-align: center;
+}
+
+.entete{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(200,200,200,0.8);
+    box-shadow: 0px 10px 8px rgb(220,220,220);
+    top: 0;
+}
+
+h1{
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	font-family: "Segoe Print";
+}
+
+.compte{
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	right: 0;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	top: 30px;
+}
+
+
+p{
+	position: relative;
+	margin-top: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.input_entete{
+	position: absolute;
+	left: 0;
+	margin-left: 200px;
+	width: 80%;
+	height: 25px;
+	border-radius: 10px;
+}
+
+.li_entete:hover{
+	background-color: rgb(141, 159, 188);
+}
+
+
+.recherche{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.recherche .input_entete{
+	position: absolute;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.test:hover{
+	position: absolute;
+	background-image: url("png/Pomme2.png");
+}
+.recherche div{
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	background-image: url("png/pomme.png");
+	background-size: cover;
+	background: r;
+	display: block;
+	bottom: 25px;
+	right: 0;
+}
+
+footer{
+	width: 100%;
+	height: 120px;
+	background-color: rgb(165, 60, 0);
+	box-shadow: 0 -65px rgb(225, 112, 0);
+	position: relative;
+	bottom: 0;
+	display: flex;
+}
+
+.bloc_page{
+	min-height: 100%;
+	position: relative;
+}
+
+body,html{
+	height: 100%;
+}
+
+
+
+.li{
+	position: absolute;
+	list-style-type: none;
+	width: 250px;
+	left: 0;
+	font-size: 18px;
+}
+
+.ul{
+	position: absolute;
+	width: 250px;
+	height: 120px;
+	bottom: 0;
+	margin-bottom: 0;
+	padding-left:0;
+	padding-right: 0;
+	left: 15%;
+}
+
+.BlocRecettes {
+	position: relative;
+	background-color: rgba(200,200,200,0.8);
+	width: 70%;
+	height: 100%;
+	margin:auto;
+	top: 150px;
+	border-radius: 25px;
+	margin-bottom: 215px;
+	color: black;
+}
+
+
+.BlocRecettes a{
+	color: blue;
+}
+
+.BlocRecettes h1{
+	position: absolute;
+	font-size: 18px;
+}
+.nav{
+	position: absolute;
+	width: 14%;
+	height: 150px;
+	background-color: rgba(200,200,200,0.8);
+	left: 0;
+	top: 200px;
+}
+
+.nav a{
+	color: black;
+	text-align: center;
+}
+
+.nav p{
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.imageRecette{
+display: flex;
+
+width: 35%;
+
+height: 35%;
+
+position: relative;
+
+left: 10%;
+}
+
+.resumer{
+
+font-size: 20px;
+
+width: 50%;
+
+position: relative;
+
+left: 50%;
+
+top: -250px;
+}
+
+.recette{
+	margin-bottom: -10%;
+}
+
+
+

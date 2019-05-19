@@ -1,0 +1,90 @@
+.formulaire{
+	position: absolute;
+	width: 1400px;
+	height: 550px;
+	background-color: grey;
+	top: 20%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	border-radius: 15px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulaire .ins{
+	position: absolute;
+	width: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: none;
+	border-radius: 10px;
+	border-right: 13px solid rgba(230,230,230,0.8);
+	padding-right: 50px;
+}
+
+.formulaire input{
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px blue solid;
+	display: flex;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.formulaire form .bouton{
+	border: 1px black solid;
+	background-color: white;
+	width: 80px;
+	height: 25px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+label{
+	font-size: 25px;
+}
+
+.formulaire .avatar{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: -75px;
+	left: 10%;
+}
+
+.titre{
+	position: relative;
+	color: blue;
+	font-size: 25px;
+}
+
+.inscription{
+	width: 800px;
+	height: 80%;
+	left: 25%;
+	position: absolute;
+}
+
+.titre2{
+	position: relative;
+	color: blue;
+	font-size: 25px;
+}
+
+.formulaire .ins2{
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 20%;
+}

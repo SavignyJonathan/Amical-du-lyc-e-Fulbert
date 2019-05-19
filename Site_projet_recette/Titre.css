@@ -1,0 +1,281 @@
+.formulaireTitre{
+	position: absolute;
+	width: 90%;
+	height: 70%;
+	background-color: grey;
+	top: 20%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	/*border-radius: 15px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 9px outset #FFA500;
+	border-radius: 40px;
+}
+
+.formulaireCreation{
+	position: absolute;
+	width: 90%;
+	height: 70%;
+	background-color: grey;
+	top: 20%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	/*border-radius: 15px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 9px outset #FFA500;
+	border-radius: 40px;
+}
+
+.formulaireCreation form{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin:auto;
+}
+
+
+.formulaireCreation input{
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px blue solid;
+	display: flex;
+	text-align: center;
+	width: 30%;
+	left: 35%;
+	font-size: 15px;
+}
+
+
+.formulaireCreation .ok{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	left: 20%;
+	bottom: 0;
+}
+.formulaireCreation .bouton{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	left: 40%;
+	bottom: 0;
+}
+
+.formulaireCreation .annuler{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	right: 20%;
+	bottom: 0;
+}
+
+
+.formulaireTitre form{
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	text-align: center;
+	margin:auto;
+}
+
+.formulaireTitre input{
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px blue solid;
+	display: flex;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+}
+
+.formulaireTitre .ok{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	left: 20%;
+	bottom: 0;
+}
+.formulaireTitre .bouton{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	left: 40%;
+	bottom: 0;
+}
+
+.formulaireTitre .annuler{
+	position: absolute;
+	border: 1px black solid;
+	background-color: white;
+	width: 20%;
+	height: 25px;
+	border-radius: 5px;
+	right: 20%;
+	bottom: 0;
+}
+
+label{
+	font-size: 25px;
+}
+
+
+.creation, .creation textarea{
+    text-align: center;
+    position: absolute;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	resize: none;
+}
+
+.creation textarea{
+	position: absolute;
+	bottom: 50%;
+}
+
+.recetteF{
+	position: absolute;
+	width: 500px;
+	height: 100%;
+	font-size: 20px;
+}
+
+
+.image_final{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 80%;
+	border-radius: 15px;
+}
+
+.formulaireFini{
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	left: 15%;
+}
+
+.formulaireTitre .formulaireFini .texte{
+	position: absolute;
+	width: 50%;
+	right: 0;
+	text-align: justify;
+}
+
+.formulaireTitre .formulaireFini .texte textarea{
+	width: 100%;
+	resize: none;
+	background: none;
+	border: none;
+	font-size: 25px;
+	font-family: "times new roman";
+	display: block;
+}
+
+.BlocRecettes textarea{
+	width: 100%;
+	resize: none;
+	background: none;
+	border: none;
+	font-size: 20px;
+	font-family: "times new roman";
+	display: block;
+}
+
+.Bloccommentaire{
+	position: absolute;
+	width: 1400px;
+	height: 550px;
+	background-color: grey;
+	top: 136%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 9px outset #FFA500;
+	border-radius: 40px;
+}
+
+.commentaire{
+	width: 100%;
+	text-align: center;
+	resize: none;
+}
+
+.blocinfo{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.commentaireexist{
+	width: 100%;
+	position: absolute;
+	height: 60%;
+	top: 40%;
+	font-size: 20px;
+}
+
+.commentaireexist .lien{
+	position: absolute;
+	width: 100%;
+	color: blue;
+	bottom: 5px;
+	text-align: center;
+}
+
+.commentaireexist a{
+	color: blue;
+	padding-left: 5px; 
+}
+
+.intercom{
+	width: 100%;
+	height: 45px;
+}
+
+.commentaireexist textarea{
+	background-color: transparent;
+	border:none;
+	resize: none;
+	text-align: left;
+	width: 100%;
+}
+
+fieldset{
+	padding: 0;
+	margin-top: -20px;
+}
