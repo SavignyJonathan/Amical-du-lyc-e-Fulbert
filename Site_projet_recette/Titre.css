@@ -159,6 +159,7 @@ label{
 .creation textarea{
 	position: absolute;
 	bottom: 50%;
+	text-align: left;
 }
 
 .recetteF{
@@ -214,7 +215,7 @@ label{
 
 .Bloccommentaire{
 	position: absolute;
-	width: 1400px;
+	width: 98.5%;
 	height: 550px;
 	background-color: grey;
 	top: 136%;

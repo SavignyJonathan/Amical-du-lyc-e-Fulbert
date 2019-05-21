@@ -29,11 +29,13 @@
 					</ul>
 				</nav>
 			</a>
-
 			<div class="recherche"> 
-				<input class="input_entete" type="text" name="" placeholder="Entrez un plat">
-				<a href="#"><div class="test">
-				</div></a>
+				<form method="GET" class="ufzerf">
+				<input class="input_entete" type="search" name="q" placeholder="Entrez un plat">
+				<div class="test">
+				</div>
+				</form>
 			</div>
+			
 		</nav>
 		

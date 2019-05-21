@@ -12,6 +12,8 @@ if(isset($_GET['page']) AND !empty($_GET['page']) AND $_GET['page'] > 0 AND $_GE
    $pageCourante = 1;
 }
 $depart = ($pageCourante-1)*$recettesParPage;
+
+
 ?>
 
 
@@ -40,6 +42,19 @@ $depart = ($pageCourante-1)*$recettesParPage;
 			echo '<br />';
 			$ingredients = $donnees['ingredients'];
 			echo "<textarea readonly=\"readonly\">$ingredients</textarea>";
+			echo "<form action =\"\" method=\"POST\" >";
+			if($_SESSION AND ($_SESSION['pseudo'] == $donnees['pseudo']))
+                     {
+                        echo "<input type=\"submit\" name=\"supprimer\" value=\"supprimer\">";
+                        if (isset($_POST['supprimer'])AND  !empty($_POST['supprimer'])){
+                           $supprimer = htmlspecialchars($_POST['supprimer']);
+                           $d = $_SESSION['test'];
+                           $bdd->exec("DELETE FROM recette WHERE id_recette =\"$d\"");
+                           header("Location: Recettes.php");
+                        }
+                  
+                     }	
+            echo "</form>";
 			echo "</div>";
 			echo "</div>";
 	}

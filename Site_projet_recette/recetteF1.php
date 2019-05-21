@@ -32,7 +32,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])) {
             $contenu = $commentaires['contenu'];
             $pseudo = $commentaires['pseudo'];
             $id_recette = $commentaires['id_recette'];
-            $id = $commentaires['id'];
          }
 
          if(!empty($_POST['validerCommentaire']))  
@@ -40,14 +39,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])) {
             unset($_POST['validerCommentaire']);
             header("Location:recetteF.php?id=".$get_id."" );
          }
-
-         if(!empty($_SESSION['pseudo']))  
-         {
-            unset($SESSION['pseudo']);
-            header("Location:recetteF.php?id=".$get_id."" );
-            echo "<h1> test</h1>";
-         }
-
       }
    }
   
@@ -100,27 +91,15 @@ $depart = ($pageCourante-1)*$commentairesParPage;
                $commentaires = $bdd->query('SELECT * FROM commentaire WHERE id_recette = '.$get_id.' ORDER BY id DESC LIMIT '.$depart.','.$commentairesParPage);
                while($c = $commentaires->fetch())
                {
-                  echo"<fieldset>
-                  <legend>";
-                  echo $c['pseudo']." à dit :";
-
-                     if($_SESSION AND ($_SESSION['pseudo'] == $c['pseudo']))
-                     {
-                        echo "<input type=\"submit\" name=\"supprimer\" value=\"supprimer\">";
-                        if (isset($_POST['supprimer'])AND  !empty($_POST['supprimer'])){
-                           $supprimer = htmlspecialchars($_POST['supprimer']);
-                           $bdd->exec("DELETE FROM commentaire WHERE id_recette =".$get_id."");
-                        }
-                  
-                     }
-                  
-               
-                  echo "</legend>";
-                  echo "<textarea readonly= \"readonly\">";
-                  echo $c['contenu'];
-                  echo "</textarea>";
-                  echo"</fieldset>";
-                  echo "<div class=\"intercom\"></div>";
+               echo"<fieldset>
+               <legend>";
+               echo $c['pseudo']." à dit";
+               echo "</legend>";
+               echo "<textarea readonly= \"readonly\">";
+               echo $c['contenu'];
+               echo "</textarea>";;
+               echo"</fieldset>";
+               echo "<div class=\"intercom\"></div>";
                }
                echo "<div class = \"lien\">";
                for($i=1;$i<=$pagesTotales;$i++) {

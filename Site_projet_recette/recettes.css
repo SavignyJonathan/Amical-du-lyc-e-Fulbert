@@ -66,8 +66,9 @@ a{
 	left: 0;
 	margin-left: 200px;
 	width: 80%;
-	height: 25px;
+	height: 25%;
 	border-radius: 10px;
+	bottom: 30%;
 }
 
 .li_entete:hover{
