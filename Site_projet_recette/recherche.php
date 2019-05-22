@@ -21,7 +21,9 @@ $depart = ($pageCourante-1)*$recettesParPage;
 	<h1>Une petite faim ? Essayer une de nos nombreuses recettes ! </h1><br /><br /><br /><br /><br />
 
 <?php
-	$reponse = $bdd->query('SELECT * FROM recette ORDER BY id DESC LIMIT '.$depart.','.$recettesParPage);
+if(isset($_GET['q']) AND !empty($_GET['q'])) {
+	$q = htmlspecialchars($_GET['q']);
+	$reponse = $bdd->query('SELECT * FROM recette WHERE titre LIKE "%'.$q.'%" ORDER BY id DESC LIMIT '.$depart.','.$recettesParPage);
 	while($donnees = $reponse->fetch())
 	{?><div class="recette">
 		<a href ="recetteF.php?id=<?= $donnees['id']?>">
@@ -59,7 +61,7 @@ $depart = ($pageCourante-1)*$recettesParPage;
 			echo "</div>";
 	}
 
-
+}
 
 	for($i=1;$i<=$pagesTotales;$i++) {
          if($i == $pageCourante) {

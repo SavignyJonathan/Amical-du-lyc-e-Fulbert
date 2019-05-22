@@ -20,20 +20,23 @@
 						<?php
 						 if($_SESSION){
 							echo"<a href=\"deconnexion.php\"><li class=\"li_entete\">Déconnexion</li></a>";
+							echo "Bonjour ".$_SESSION['pseudo'];
 						}
 						else{
 							echo"<li class=\"li_entete\">Connexion</li>";
 						}
+
 						?>
 						
 					</ul>
 				</nav>
 			</a>
 			<div class="recherche"> 
-				<form method="GET" class="ufzerf">
-				<input class="input_entete" type="search" name="q" placeholder="Entrez un plat">
-				<div class="test">
-				</div>
+				<form action ="recherche.php" method="GET">
+
+				<input class="input_entete" type="search" name="q" placeholder="Entrez un plat"><div class="test"></div>
+				
+				
 				</form>
 			</div>
 			
